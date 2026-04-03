@@ -60,11 +60,3 @@ C4Context
 | Pessoas (dev, reviewer) | Verde (#4caf50) | Atores humanos que interagem com o sistema |
 | SSD Agent (sistema central) | Azul (#1565c0) | Sistema principal sendo descrito |
 | Sistemas externos | Laranja (#ff9800) | Dependências externas necessárias |
-
-## Checklist Nível 1
-
-- [x] Um único `System()` central — o SSD Agent
-- [x] Todos os atores humanos com `Person()` ou `Person_Ext()`
-- [x] Todos os sistemas externos com `_Ext`
-- [x] Tecnologia de integração nos `Rel()` externos
-- [x] SEM containers, componentes ou detalhes internos
