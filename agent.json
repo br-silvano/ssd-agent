@@ -1,0 +1,42 @@
+{
+    "name": "ssd-agent",
+    "version": "0.1.0",
+    "description": "Spec-Driven Development pipeline auditável. Transforma um briefing bruto em código rastreável via: normalização → domain spec → contratos → testes → implementação → revisão.",
+    "author": "silvano",
+    "license": "MIT",
+    "keywords": [
+        "ssd",
+        "spec-driven",
+        "langchain",
+        "deep-agents",
+        "python",
+        "fastapi",
+        "nextjs"
+    ],
+    "acp": {
+        "protocol_version": 1,
+        "capabilities": {
+            "streaming": true,
+            "toolCalls": true,
+            "permissions": true,
+            "diffs": true
+        }
+    },
+    "run": {
+        "command": "python",
+        "args": ["-m", "ssd_agent"],
+        "env": {
+            "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}"
+        }
+    },
+    "editors": {
+        "zed": {
+            "config_example": {
+                "agent": "ssd-agent",
+                "source": "local"
+            }
+        }
+    },
+    "repository": "https://github.com/br-silvano/ssd-agent",
+    "homepage": "https://github.com/br-silvano/ssd-agent#readme"
+}

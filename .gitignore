@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+
+# Environment
+.env
+uv.lock
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Workspace (keep structure via .gitkeep)
+workspace/*
+!workspace/.gitkeep

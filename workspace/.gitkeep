@@ -1,0 +1,19 @@
+# SSD Agent Workspace
+#
+# Pipeline: briefing → domain-spec → contracts → tests → implementation → review
+#
+# ┌────────────────┬──────────────────────────────────────────────┐
+# │ Directory       │ Purpose                                      │
+# ├────────────────┼──────────────────────────────────────────────┤
+# │ briefing/       │ Raw input + normalized.json                  │
+# │ domain-spec/    │ spec.md (→ Scope Freeze gate)                │
+# │ contracts/      │ openapi.yaml + schemas (→ Contract Freeze)   │
+# │ tests/          │ BDD scenarios + TDD suites                   │
+# │ implementation/ │ Generated code (→ Implementation Freeze)     │
+# │ review/         │ Audit checklist + HITL sign-offs             │
+# └────────────────┴──────────────────────────────────────────────┘
+#
+# Stack: FastAPI + Celery | Next.js + React | LangChain + Claude | PostgreSQL + pgvector
+#
+# Rule: persist all artifacts in structured output (JSON/YAML/MD) before proceeding
+# Gates: HITL approval required at Scope, Contract, and Implementation freezes
